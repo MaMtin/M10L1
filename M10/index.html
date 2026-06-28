@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAcción - Actúa Ya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="logo">Eco<span>Acción</span></h1>
+            <p class="fade-in">El planeta no puede esperar. ¿Tú sí?</p>
+            <a href="#riesgos" class="btn-primary">Descubrir la Realidad</a>
+        </div>
+    </header>
+
+    <section id="riesgos" class="cards-section">
+        <h2 class="section-title">Lo que está pasando en 3 imágenes</h2>
+        
+        <div class="cards-container">
+            <div class="card" onclick="toggleInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=600');">
+                        <h3>01. El Deshielo</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Los glaciares desaparecen <strong>10 veces más rápido</strong> de lo previsto. El mar sube.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('https://images.unsplash.com/photo-1508962914676-134849a727f0?q=80&w=600');">
+                        <h3>02. Sequías</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Zonas fértiles se convierten en desiertos. Menos agua, menos comida, más crisis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleInfo(this)">
+                <div class="card-inner">
+                    <div class="card-front" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600');">
+                        <h3>03. Plásticos</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Para 2050, habrá <strong>más plástico que peces</strong> en el océano. Está en lo que comes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section">
+        <h3>Toneladas de CO2 emitidas globalmente este año:</h3>
+        <div id="co2-counter">0</div>
+        <p>Cada segundo cuenta. Tu indiferencia también cuesta.</p>
+    </section>
+
+    <footer class="action-footer">
+        <h2>¿Listo para cambiar el rumbo?</h2>
+        <button class="btn-action" onclick="mostrarAccion()">¡Quiero Actuar!</button>
+        <div id="mensaje-accion" class="hidden">
+            <p>🌱 Empieza hoy: Reduce el consumo de carne 1 día a la semana, desconecta lo que no uses y comparte este sitio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
